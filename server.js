@@ -2,7 +2,19 @@ const express = require("express");
 const cors = require("cors");
 
 const app = express();
-app.use(cors({origin: ['http://localhost:3000', 'https://64baaafed143b7190f099c01--singular-gumption-1efb7d.netlify.app/'], credentials: true}));
+const corsOptions = {
+    origin: [
+      "https://prismatic-queijadas-0e8da0.netlify.app",
+      "http://localhost:3000",
+    ],
+    allowedHeaders: ["Content-Type"],
+    exposedHeaders: ["Access-Control-Allow-Origin"],
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    preflightContinue: false,
+    optionsSuccessStatus: 204,
+    credentials: true,
+  };
+app.use(cors(corsOptions));
 
 
 const PORT = 3001 || process.env.PORT;
