@@ -4,7 +4,7 @@ const cors = require("cors");
 const app = express();
 const corsOptions = {
     origin: [
-      "https://prismatic-queijadas-0e8da0.netlify.app",
+      "https://singular-gumption-1efb7d.netlify.app",
       "http://localhost:3000",
     ],
     allowedHeaders: ["Content-Type"],
