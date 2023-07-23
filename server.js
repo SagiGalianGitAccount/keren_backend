@@ -6,6 +6,7 @@ const corsOptions = {
     origin: [
       "https://singular-gumption-1efb7d.netlify.app",
       "http://localhost:3000",
+      "https://serene-torrone-8fa0ca.netlify.app",
     ],
     allowedHeaders: ["Content-Type"],
     exposedHeaders: ["Access-Control-Allow-Origin"],
